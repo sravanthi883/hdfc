@@ -1,0 +1,12 @@
+pipeline{
+agent any{
+stages{
+stage('checkout'){
+steps{
+git credentialsId: 'github-credenitals', url: 'https://github.com/sravanthi883/hdfc.git'
+}
+}
+}
+}
+
+
